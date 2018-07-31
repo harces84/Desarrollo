@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
+        <meta name="description" content="Fabricamos soluciones innovadoras, rentables y tangibles, destacamos en la integración de servicios en telecomunicaciones, informática y seguridad, gracias a nuestras alianzas con los principales fabricantes del ramo, soportados por nuestras multiples certificaciones.">
         <!--  
         Document Title
         =============================================
@@ -28,11 +28,13 @@
         <!-- Default stylesheets-->
         <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-        <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">        
+        <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
         <!-- Grid Component css -->
         <link rel="stylesheet" href="grid/css/component.css">
         <!-- Main stylesheet and color file-->
         <link href="assets/css/style.css" rel="stylesheet">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgdFFtbJv0AdPTEWI2nIWVMLdHPslvPZg&callback=initMap" async defer></script>
         <script src="grid/js/modernizr.custom.js"></script>
     </head>
     <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
@@ -177,18 +179,23 @@
                             </section>   
                             <!-- End section -->
                             <!-- Presentacion Section -->
-                            <section class="module parallax-bg module-video bg-dark-30" data-background="assets/images/bg-2.jpg" id="presentacion">
-                                <div class="video-player2" data-property="{videoURL:'https://www.youtube.com/watch?v=xBWEABJXj24', containment:'.module-video', startAt:1, mute:false, autoPlay:false, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
-                                <div class="video-controls-box">
-                                  <div class="container">
-                                    <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+                            <section class="module bg-dark-60" data-background="assets/images/bg-2.jpg" id="presentacion">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div class="video-box">
+                                      <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=xBWEABJXj24"><img src="assets/images/favicons/icon-play.png"></a></div>
+                                      <div class="video-title font-alt">Presentaci&oacute;n</div>
+                                      <div class="video-subtitle font-alt">Mira nuestro video y conoce acerca de nuestros servicios</div>
+                                    </div>
                                   </div>
                                 </div>
+                              </div>
                             </section>
                             <!-- End section -->
                             <!-- Socios Section -->
                             <section id="socios">
-                                <div class="module-small bg-dark">
+                                <div class="module-small bg-dark-2">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -202,324 +209,11 @@
                                             </div>
                                         </div>
                                         <!-- Swiper Clients -->
-                                        <div class="s-swiper">
+                                         <div class="s-swiper">
                                             <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".10s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Acer-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".12s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/AData-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".14s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/APC-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".16s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Axis-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".18s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Belden-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".20s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Benq-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".22s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Brother-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".24s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/CDP-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".26s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/charolfil-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".28s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/cisco-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".30s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Condumex-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".32s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/condunet-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".34s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/CyberPower-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".36s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/dahua-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".38s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/dellemc-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".40s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/dlink-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".42s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Epson-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".44s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Eset-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".46s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Fibraim-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".48s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/fortinet-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".50s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/f-secure-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".52s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/grandstream-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".54s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/HP-dark.png" alt="Clients Logo" style="width: 40px">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".56s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Hikvision-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".58s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Honeywell-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".60s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/huawei-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".62s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/infocus-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".64s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/intel-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".66s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/intelinet-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".68s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/jaguar-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".70s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/kaspersky-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".72s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/kingston-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".74s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/koblenz-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".76s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/kyocera-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".78s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/lenovo-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".80s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/lexmark-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".82s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Logitech-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".84s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/manhattan-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".86s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/meriva-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".88s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/microsoft-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".90s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/norton-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".92s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/north-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".94s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/office-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".96s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/optoma-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".98s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Panasonic-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Pandiut-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.02s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/pelco-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.04s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/plantronics-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.06s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/provision-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.08s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/rymco-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.10s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Samsung-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.12s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Seagate-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.14s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/thorsman-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.16s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/totalground-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.18s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Tplink-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.20s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/triplite-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.22s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/ubiquiti-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.24s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/vmware-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.26s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Xerox-dark.png" alt="Clients Logo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-                                                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay="1.28s">
-                                                        <img class="s-clients-v1" src="assets/images/logos/dark/Zebra-dark.png" alt="Clients Logo">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="wow fadeIn" data-wow-duration="1.0" data-wow-delay=".10s">
+                                                        <img  src="assets/images/socios.png" alt="Clients Logo">
                                                     </div>
                                                 </div>
                                             </div>
@@ -789,60 +483,55 @@
                     </div><!-- /container -->
                 </div><!-- /perspective -->
             </main>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgdFFtbJv0AdPTEWI2nIWVMLdHPslvPZg&callback=initMap"
-    async defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="assets/lib/wow/dist/wow.js"></script>
         <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
         <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
         <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-        <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-        <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
         <script src="assets/lib/smoothscroll.js"></script>
         <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <!-- Grid js -->
         <script src="grid/js/grid.js"></script>
-        <script src="assets/js/main.js"></script>     
+        <script src="assets/js/main.js"></script>
         <script src="assets/js/google-map-init.js"></script>
-            
-    <script>
-        $(document).ready(function(){
+        <script>
+            $(document).ready(function(){
 
-          var kawa = $('.top-bar');
-          var back = $('#back-to-top');
-          function scroll() {
-             if ($(window).scrollTop() > 700) {
-                kawa.addClass('fixed');
-                back.addClass('show-top');
+              var kawa = $('.top-bar');
+              var back = $('#back-to-top');
+              function scroll() {
+                 if ($(window).scrollTop() > 700) {
+                    kawa.addClass('fixed');
+                    back.addClass('show-top');
 
-             } else {
-                kawa.removeClass('fixed');
-                back.removeClass('show-top');
-             }
-          }
-
-          document.onscroll = scroll;
-        });
-    </script>
-    <!--HHHHHHHHHHHH Smooth Scrooling HHHHHHHHHHHHHHHH-->
-    <script>
-        $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
+                 } else {
+                    kawa.removeClass('fixed');
+                    back.removeClass('show-top');
+                 }
               }
-            }
-          });
-        });
-    </script>
+
+              document.onscroll = scroll;
+            });
+        </script>
+        <!--HHHHHHHHHHHH Smooth Scrooling HHHHHHHHHHHHHHHH-->
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
 	</body>
 </html>

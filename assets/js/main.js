@@ -127,41 +127,6 @@ jQuery(document).ready(function($) {
 	   $(function() {
            Grid.init();
        });
-	
-        /* ---------------------------------------------- /*
-         * Intro slider setup
-         /* ---------------------------------------------- */
-
-        if( $('.hero-slider').length > 0 ) {
-            $('.hero-slider').flexslider( {
-                animation: "fade",
-                animationSpeed: 1000,
-                animationLoop: true,
-                prevText: '',
-                nextText: '',
-                before: function(slider) {
-                    $('.titan-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
-                    slider.slides.eq(slider.currentSlide).delay(500);
-                    slider.slides.eq(slider.animatingTo).delay(500);
-                },
-                after: function(slider) {
-                    $('.titan-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
-                },
-                useCSS: true
-            });
-        }
-
-
-        /* ---------------------------------------------- /*
-         * Rotate
-         /* ---------------------------------------------- */
-
-        $(".rotate").textrotator({
-            animation: "dissolve",
-            separator: "|",
-            speed: 3000
-        });
-
 
         /* ---------------------------------------------- /*
          * Transparent navbar animation
@@ -391,49 +356,6 @@ jQuery(document).ready(function($) {
             $(this).toggleClass('fa-volume-off fa-volume-up');
             return false;
         });
-
-
-        /* ---------------------------------------------- /*
-         * Owl Carousel
-         /* ---------------------------------------------- */
-
-        $('.owl-carousel').each(function(i) {
-
-            // Check items number
-            if ($(this).data('items') > 0) {
-                items = $(this).data('items');
-            } else {
-                items = 4;
-            }
-
-            // Check pagination true/false
-            if (($(this).data('pagination') > 0) && ($(this).data('pagination') === true)) {
-                pagination = true;
-            } else {
-                pagination = false;
-            }
-
-            // Check navigation true/false
-            if (($(this).data('navigation') > 0) && ($(this).data('navigation') === true)) {
-                navigation = true;
-            } else {
-                navigation = false;
-            }
-
-            // Build carousel
-            $(this).owlCarousel( {
-                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-                nav: navigation,
-                dots: pagination,
-                loop: true,
-                dotsSpeed: 400,
-                items: items,
-                navSpeed: 300,
-                autoplay: 2000
-            });
-
-        });
-
 
         /* ---------------------------------------------- /*
          * Blog masonry

@@ -403,7 +403,9 @@ a,
 .bg-dark {
   background: #111;
 }
-
+.bg-dark-2 {
+  background: #090909;
+}
 .bg-dark-30:before {
   position: absolute;
   background: rgba(2, 2, 2, 0.4);

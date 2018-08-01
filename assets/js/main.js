@@ -235,69 +235,6 @@ jQuery(document).ready(function($) {
             }
         });
 
-
-        /* ---------------------------------------------- /*
-         * Portfolio
-         /* ---------------------------------------------- */
-
-        var worksgrid   = $('#works-grid'),
-            worksgrid_mode;
-
-        if (worksgrid.hasClass('works-grid-masonry')) {
-            worksgrid_mode = 'masonry';
-        } else {
-            worksgrid_mode = 'fitRows';
-        }
-
-        worksgrid.imagesLoaded(function() {
-            worksgrid.isotope({
-                layoutMode: worksgrid_mode,
-                itemSelector: '.work-item'
-            });
-        });
-
-        $('#filters a').click(function() {
-            $('#filters .current').removeClass('current');
-            $(this).addClass('current');
-            var selector = $(this).attr('data-filter');
-
-            worksgrid.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-
-            return false;
-        });
-
-
-        /* ---------------------------------------------- /*
-         * Testimonials
-         /* ---------------------------------------------- */
-
-        if ($('.testimonials-slider').length > 0 ) {
-            $('.testimonials-slider').flexslider( {
-                animation: "slide",
-                smoothHeight: true
-            });
-        }
-
-
-        /* ---------------------------------------------- /*
-         * Post Slider
-         /* ---------------------------------------------- */
-
-        if ($('.post-images-slider').length > 0 ) {
-            $('.post-images-slider').flexslider( {
-                animation: "slide",
-                smoothHeight: true,
-            });
-        }
-
-
         /* ---------------------------------------------- /*
          * Progress bar animations
          /* ---------------------------------------------- */
@@ -356,15 +293,6 @@ jQuery(document).ready(function($) {
             $(this).toggleClass('fa-volume-off fa-volume-up');
             return false;
         });
-
-        /* ---------------------------------------------- /*
-         * Blog masonry
-         /* ---------------------------------------------- */
-
-        $('.post-masonry').imagesLoaded(function() {
-            $('.post-masonry').masonry();
-        });
-
 
         /* ---------------------------------------------- /*
          * Scroll Animation
